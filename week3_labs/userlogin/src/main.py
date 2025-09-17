@@ -91,21 +91,23 @@ def main(page: ft.Page):
                     result = None
                     page.open(database_error_dialog)
                     page.update()
+
+                if result:
+                    success_dialog.content = ft.Text(f"Welcome, {username_field.value}!", text_align=ft.TextAlign.CENTER)
+                    page.open(success_dialog)
+                    print("Success")
+                    page.update()
+                else:
+                    page.open(failure_dialog)
+                    print("Not log-in-ed")
+                    page.update()
+
             else:
                 print("Connection failed.")
                 result = None
                 page.open(database_error_dialog)
                 page.update()
 
-            if result:
-                success_dialog.content = ft.Text(f"Welcome, {username_field.value}!", text_align=ft.TextAlign.CENTER)
-                page.open(success_dialog)
-                print("Success")
-                page.update()
-            else:
-                page.open(failure_dialog)
-                print("Not log-in-ed")
-                page.update()
 
         except Exception as err:
             print(f"Database Error: {err}")
