@@ -95,15 +95,7 @@ def main(page: ft.Page):
                 ft.Divider(),
                 ft.Row(
                     [
-                        ft.TextField(
-                            label="Search",
-                            hint_text="Search contacts...",
-                            icon=ft.Icons.SEARCH,
-                            border_color=ft.Colors.WHITE,
-                            on_change=lambda e: display_contacts(
-                                page, contacts_list_view, db_conn, e.control.value, filter_by
-                            )
-                        ),
+                        search_field,
                         filter_function 
                     ],
                     alignment=ft.MainAxisAlignment.CENTER,
