@@ -41,7 +41,7 @@ def main(page: ft.Page):
     search_field = ft.TextField(
         label="Search",     
         width=500, 
-        border_color=ft.Colors.WHITE, 
+        border_color=ft.Colors.WHITE,
         icon=ft.Icons.SEARCH,
         hint_text="Search contacts...",
         on_change=lambda e: display_contacts(page, contacts_list_view, db_conn, e.control.value, filter_by),
@@ -62,7 +62,7 @@ def main(page: ft.Page):
         ]
     )
 
-    contacts_list_view = ft.ListView(expand=1, height=200, spacing=10, auto_scroll=True)
+    contacts_list_view = ft.ListView(expand=1, height=500, spacing=10, auto_scroll=True)
 
     add_button = ft.ElevatedButton(
         text="Add Contact",
