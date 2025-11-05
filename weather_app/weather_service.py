@@ -2,7 +2,7 @@
 """Weather API service layer."""
 
 import httpx
-from typing import Dict, Optional
+from typing import Dict
 from config import Config
 
 
