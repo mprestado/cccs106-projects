@@ -51,10 +51,10 @@ A Weather App built in Python using Flet. Weather provided by OpenWeather throug
    - Logo assets found were exclusive for dark theme, used a recoloring python program that fills the image (PNG) with inverted color
   
 ## Screenshots
-![Light Mode Screenshot](screenshot/lightmode.png "Lightmode")
-![Dark Mode Screenshot](screenshot/darkmode.png "Darkmode")
-![Temp Toggle Screenshot](screenshot/toggle.png "Temp Toggle")
-![Search History Screenshot](screenshot/history.png "Search History")
+![Light Mode Screenshot](screenshots/lightmode.png "Lightmode")
+![Dark Mode Screenshot](screenshots/darkmode.png "Darkmode")
+![Temp Toggle Screenshot](screenshots/toggle.png "Temp Toggle")
+![Search History Screenshot](screenshots/history.png "Search History")
 
 ## Installation
 
@@ -78,6 +78,7 @@ pip install -r requirements.txt
 # Create .env file
 cp .env.example .env
 # Add your OpenWeatherMap API key to .env
+
 
 
 
