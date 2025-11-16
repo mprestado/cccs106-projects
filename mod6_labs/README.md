@@ -65,7 +65,7 @@ A Weather App built in Python using Flet. Weather provided by OpenWeather throug
 ### Setup Instructions
 ```bash
 # Clone the repository
-git clone https://github.com/<username>/cccs106-projects.git
+git clone https://github.com/mprestado/cccs106-projects.git
 cd cccs106-projects/mod6_labs
 
 # Create virtual environment
@@ -78,6 +78,7 @@ pip install -r requirements.txt
 # Create .env file
 cp .env.example .env
 # Add your OpenWeatherMap API key to .env
+
 
 
 
